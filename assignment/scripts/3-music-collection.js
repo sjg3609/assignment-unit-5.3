@@ -25,7 +25,7 @@ function showCollection( array ) {
     console.log(array);
     for ( let i = 0; i < array.length; i++) {
         if (array[i]) {
-            console.log(`${collection.title} by ${collection.artist}, published in ${collection.yearPublished}`);
+            console.log(`${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublished}`);
         }
     }
 }
