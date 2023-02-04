@@ -23,7 +23,15 @@ console.log(collection);
 
 function showCollection( array ) {
     console.log(array);
-    for (i = 0; i < array.length; i++) {
-        
+    for ( let i = 0; i < array.length; i++) {
+        if (array[i]) {
+            console.log(`${collection.title} by ${collection.artist}, published in ${collection.yearPublished}`);
+        }
     }
+}
+
+console.log(showCollection(collection));
+
+function findByArtist( artist ) {
+
 }
