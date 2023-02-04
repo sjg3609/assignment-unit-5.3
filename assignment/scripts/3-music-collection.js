@@ -8,23 +8,22 @@ function addToCollection( title, artist, yearPublished ) {
         artist: artist,
         yearPublished: yearPublished,
     };
+    collection.push(albums);
     return albums;
 } 
 
 console.log(addToCollection('Four', 'One Direction', '2014'));
-
-collection.push(addToCollection('Four', 'One Direction', '2014'));
-collection.push(addToCollection('Midnights', 'Taylor Swift', '2022'));
-collection.push(addToCollection('Acid Rap', 'Chance the Rapper', '2013'));
-collection.push(addToCollection('Because the Internet', 'Childisn Gambino', '2013'));
-collection.push(addToCollection('Coloring Book', 'Chance the Rapper', '2016'));
-collection.push(addToCollection('Jazz', 'Queen', '1978'));
+console.log(addToCollection('Midnights', 'Taylor Swift', '2022'));
+console.log(addToCollection('Acid Rap', 'Chance the Rapper', '2013'));
+console.log(addToCollection('Because the Internet', 'Childisn Gambino', '2013'));
+console.log(addToCollection('Coloring Book', 'Chance the Rapper', '2016'));
+console.log(addToCollection('Jazz', 'Queen', '1978'));
 
 console.log(collection);
 
 function showCollection( array ) {
     console.log(array);
-    for (let x of collection) {
+    for (i = 0; i < array.length; i++) {
         
     }
 }
