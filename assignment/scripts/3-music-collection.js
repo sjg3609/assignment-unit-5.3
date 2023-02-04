@@ -24,14 +24,21 @@ console.log(collection);
 function showCollection( array ) {
     console.log(array);
     for ( let i = 0; i < array.length; i++) {
-        if (array[i]) {
             console.log(`${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublished}`);
-        }
     }
 }
 
-console.log(showCollection(collection));
+showCollection(collection);
 
 function findByArtist( artist ) {
-
+    let results = [];
+    for (let artist of collection) {
+        if (artist === collection) {
+            results.push(artist);
+            return results;
+        } 
+        
+    }
 }
+
+console.log(findByArtist('Taylor Swift'));
