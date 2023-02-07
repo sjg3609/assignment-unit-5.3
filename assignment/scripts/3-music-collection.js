@@ -36,12 +36,12 @@ function findByArtist( artist ) {
     let results = [];
     for (let i=0; i < collection.length; i++) {
         if (artist === collection[i].artist) { // artist is equal in value and type to collection.artist from index 0
-            console.log('Its a match!');
-        } return results.push(artist);
-    } 
+            results.push(artist); 
+        } 
+    } return results;
 } 
 
-findByArtist('Taylor Swift');
-findByArtist('Eminem');
-findByArtist('One Direction');
+console.log(findByArtist('Taylor Swift'));
+console.log(findByArtist('Eminem'));
+console.log(findByArtist('One Direction'));
 
