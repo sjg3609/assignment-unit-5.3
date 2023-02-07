@@ -35,7 +35,7 @@ function findByArtist( artist ) {
     console.log('In findByArtist function, seartching for:', artist)
     let results = [];
     for (let i=0; i < collection.length; i++) {
-        if (artist === collection[i].artist) { // artist is equal in value and type to collection.artist from index 0
+        if (artist === collection[i].artist) { // artist is equal in value and type to collection.artist array from index 0 increasing by 1 
             results.push(artist); 
         } 
     } return results;
@@ -45,3 +45,15 @@ console.log(findByArtist('Taylor Swift'));
 console.log(findByArtist('Eminem'));
 console.log(findByArtist('One Direction'));
 
+// STRETCH GOALS
+
+function search ( artist, yearPublished ) {
+    let searchFunction = [];
+    for (let i = 0; i < collection.length; i++) {
+        if (collection[i] === collection.artist && collection.yearPublished) {
+            searchFunction.push(artist, yearPublished);
+        }
+    } return searchFunction;
+}
+
+console.log(search('Childish Gambino', '2013'));
