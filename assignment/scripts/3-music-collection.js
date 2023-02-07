@@ -13,6 +13,7 @@ function addToCollection( title, artist, yearPublished ) {
 } 
 
 console.log(addToCollection('Four', 'One Direction', '2014'));
+console.log(addToCollection('Midnight Memories', 'One Direction', '2013'));
 console.log(addToCollection('Midnights', 'Taylor Swift', '2022'));
 console.log(addToCollection('Acid Rap', 'Chance the Rapper', '2013'));
 console.log(addToCollection('Because the Internet', 'Childisn Gambino', '2013'));
@@ -25,20 +26,22 @@ function showCollection( array ) {
     console.log('in showCollection function: ', array);
     for ( let i = 0; i < array.length; i++) {
             console.log(`${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublished}`);
-    }
-}
+    } 
+} 
 
 showCollection(collection);
 
 function findByArtist( artist ) {
-    console.log('In findByArtist function:', artist)
+    console.log('In findByArtist function, seartching for:', artist)
     let results = [];
-    for (let artistSearch of collection) {
-        if (artistSearch === collection.length) {
-            results.push(artist);
-        } 
-        
-    } return results;
-}
+    for (let i=0; i < collection.length; i++) {
+        if (artist === collection[i].artist) { // artist is equal in value and type to collection.artist from index 0
+            console.log('Its a match!');
+        } return results.push(artist);
+    } 
+} 
 
-console.log(findByArtist('Taylor Swift'));
+findByArtist('Taylor Swift');
+findByArtist('Eminem');
+findByArtist('One Direction');
+
