@@ -36,7 +36,7 @@ function findByArtist( artist ) {
     let results = [];
     for (let i=0; i < collection.length; i++) {
         if (artist === collection[i].artist) { // artist is equal in value and type to collection.artist array from index 0 increasing by 1 
-            results.push(artist); 
+            results.push(collection[i]); // Changed during class after submission while going over function during questions
         } 
     } return results;
 } 
@@ -50,7 +50,7 @@ console.log(findByArtist('One Direction'));
 function search ( artist, yearPublished ) {
     let searchFunction = [];
     for (let i = 0; i < collection.length; i++) {
-        if (collection[i] === collection.artist && collection.yearPublished) {
+        if (collection[i] === artist && yearPublished) {
             searchFunction.push(artist, yearPublished);
         }
     } return searchFunction;
